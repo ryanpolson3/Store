@@ -73,6 +73,10 @@ body {
     .header-navigation_mobile {
         display: none;
     }
+
+    .header-navigation_mobile-links-container {
+        display: none;
+    } 
 }
 
 .header-container {
@@ -100,10 +104,11 @@ body {
 .header-navigation_hamburger-menu,
 .two-col-container_wrapper {
     width: 50%;
+    display: block;
 }
 
 .logo {
-    width: 30px;
+    width: 40px;
 }
 
 .logo img {
@@ -124,7 +129,7 @@ li {
     text-decoration: none;
     color: var(--link-black);
     font-family: var(--font-family);
-    font-size: .8rem;
+    font-size: .75rem;
 }
 
 @media screen and (min-width:1920px) {
@@ -142,15 +147,15 @@ li {
     }
     
     .header-navigation_mobile {
-        display: block;
+        display: flex;
+        width: 100%;
+        align-items: center;
     }
 }
 
 .header-navigation_mobile-links-container {
     width: 100%;
     position: absolute;
-    margin-top: 224px;
-    margin-left: -24px;
 } 
 
 .mobile-wrapper {
@@ -176,11 +181,9 @@ li.mobile-li {
 }
 
 .header-navigation_hamburger-menu a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 8px 1.5rem;
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
 }
 
 i.fa.fa-bars {
@@ -245,12 +248,16 @@ i.fa.fa-bars {
 .two-col {
     width: 100%;
     background-color: var(--white);
-    border-radius: 5px;
+}
+
+.two-col.col-1 {
+    background-color: var(--black);
 }
 
 .two-col .two-col_img-wrapper {
-    background-color: var(--black);
-    height: 100%;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 .two-col img {
@@ -259,28 +266,34 @@ i.fa.fa-bars {
     display: flex;
 }
 
+.two-col_text-wrapper {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
 .two-col h1 {
     margin: 0;
     font-size: 1.5rem;
     font-family: var(--font-helvetica);
     text-align: center;
-    padding: 5px 0;
+    padding: 5% 0 0;
 }
 
 .two-col p {
     font-family: var(--font-family);
     font-size: .875rem;
-    padding: 5px 10px;
+    padding: 5% 1.5rem 3%;
 }
 
 .btn-wrapper {
-    padding: 5px 0 10px;
+    padding: 5% 0 5%;
 }
 
 .btn-learn-more {
     display: flex;
     margin: 0 auto;
-    padding: 4px 8px;
+    padding: 10px 20px;
     font-weight: 700;
     background-color: var(--black);
     color: var(--white);
@@ -304,68 +317,46 @@ i.fa.fa-bars {
 }
 
 @media screen and (min-width: 768px) {
-    .two-col h1 {
-        font-size: 1.8rem;
-        padding: 5px 0;
-    }
-    
-    .two-col p {
-        font-size: 1rem;
-        padding: 5px 15px;
-    }
-    
     .btn-wrapper {
-        padding: 10px 0 10px;
-    }
-    
-    .btn-learn-more {
-        padding: 8px 10px;
-        font-size: 1rem;
+        padding: 3% 0 5%;
     }
 }
+
 @media screen and (min-width: 1024px) {
     .two-col {
         margin: 40px;
+        border-radius: 5px;
     }
 
     .two-col h1 {
-        font-size: 2.5rem;
-        padding: 5px 0;
+        font-size: 1.7rem;
     }
     
     .two-col p {
-        font-size: 1.156rem;
-        padding: 5px 15px;
+        font-size: 1rem;
     }
     
     .btn-wrapper {
-        padding: 10px 0 10px;
-    }
-    
-    .btn-learn-more {
-        padding: 8px 10px;
-        font-size: 1rem;
+        padding: 3% 0 5%;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .two-col h1 {
-        font-size: 3.5rem;
-        padding: 10px 0;
+        font-size: 2.5rem;
     }
     
     .two-col p {
-        font-size: 1.7rem;
-        padding: 10px 20px;
+        font-size: 1.5rem;
     }
-    
+
     .btn-wrapper {
-        padding: 15px 0 15px;
+        padding: 3% 0 5%;
     }
     
     .btn-learn-more {
-        padding: 14px 25px;
-        font-size: 1.4rem;
+        padding: 14px 30px;
+        font-size: .9rem;
     }
 }
 
@@ -374,6 +365,24 @@ i.fa.fa-bars {
         width: 100%;
         max-width: 1920px;
         margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .two-col .two-col {
+        background-color: var(--black);
+    }
+
+    .two-col h1 {
+        font-size: 3rem;
+    }
+
+    .btn-wrapper {
+        padding: .5% 0 5%;
+    }
+    
+    .btn-learn-more {
+        font-size: 1rem;
     }
 }
 
