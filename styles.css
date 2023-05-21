@@ -24,7 +24,7 @@
     color: var(--black);
 }
 body {
-    
+    background-color: var(--light-grey);
     margin: 0;
     padding: 0;
 }
@@ -79,6 +79,7 @@ body {
     width: 100%;
     height: auto;
     position: relative;
+    background-color: var(--white);
 }
 
 .header-wrapper {
@@ -377,11 +378,22 @@ i.fa.fa-bars {
 }
 
 /* Product Carousel */
-.splide {
+.splide-container {
+    width: 100%;
+    
+}
+
+.splide-wrapper {
+    width: 100%;
     max-width: 1920px;
+    background-color: var(--white);
     margin: 0 auto;
-    background-color: purple;
+}
+
+.splide {
+    margin: 0 auto;
     padding: 25px 0;
+    
 }
 
 h1#carousel-heading {
@@ -395,37 +407,47 @@ h1#carousel-heading {
 }
 
 .splide__slide {
-    /* width: 100%; */
-    max-width: 288px;
     border: 1px solid var(--light-grey);
     background-color: white;
-    /* padding: 15px; */
 }
 
 .splide__slide__container {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--light-grey);
 }
 
 .splide__slide img {
-    width: 100%;
-    max-width: 288px;
-    height: 200px;
+    width: 85%;
+    height: auto;
+}
+
+.title {
+    height: 40px;
+    padding-top: 15px;
+    font-weight: 700;
+    font-size: 0.813rem;
 }
 
 .category {
     padding-bottom: 10px;
-}
-
-.title {
-    padding-bottom: 10px;
-    font-weight: 700;
+    height: 50px;
+    font-size: 0.875rem;
 }
 
 .price {
     padding-bottom: 10px;
     font-weight: 700;
+}
+
+.splide__arrow--prev {
+    left: 0em !important;
+}
+
+.splide__arrow--next {
+    right: 0em !important;
 }
 
 .splide__arrow svg {
@@ -436,6 +458,26 @@ h1#carousel-heading {
     fill: var(--dark-charcoal) !important;
 }
 
+@media screen and (min-width: 500px) {
+    .splide__arrow--prev {
+        left: -2.2em !important;
+        top: 58% !important
+    }
 
+    .splide__arrow--next {
+        right: -2.2em !important;
+        top: 58% !important
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .splide__arrow--prev {
+        left: -2.5em !important;
+    }
+
+    .splide__arrow--next {
+        right: -2.5em !important;
+    }
+}
 
 
