@@ -23,10 +23,16 @@
     font-family: var(--font-family);
     color: var(--black);
 }
+
 body {
     background-color: var(--light-grey);
     margin: 0;
     padding: 0;
+}
+
+section {
+    width: 100%;
+    height: auto;
 }
 
 /* Utility Styles */
@@ -80,8 +86,6 @@ body {
 }
 
 .header-container {
-    width: 100%;
-    height: auto;
     position: relative;
     background-color: var(--white);
 }
@@ -205,17 +209,19 @@ i.fa.fa-bars {
 }
 
 /* Hero Styles */
-.hero-container {
+.hero-wrapper {
     width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
-.hero-container img {
+.hero-wrapper img {
     width: 100%;
     height: auto;
     margin-bottom: -4px;
 }
 
-.hero-container_wrapper button {
+.hero-wrapper button {
     background-color: var(--yellow);
     border: 2px solid var(--black);
     font-size: 1.5rem;
@@ -226,18 +232,10 @@ i.fa.fa-bars {
 }
 
 @media screen and (min-width: 1920px) {
-    .hero-container_wrapper {
-        width: 100%;
-        max-width: 1920px;
-        margin: 0 auto;
-    }
+    
 }
 
 /* 2 Column Section*/
-.two-col-container {
-    width: 100%;
-}
-
 .two-col-container_wrapper {
     width: 100%;
     display: flex;
