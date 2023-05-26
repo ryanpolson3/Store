@@ -35,6 +35,12 @@ section {
     height: auto;
 }
 
+.wrapper {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 /* Utility Styles */
 .hide {
     display: none;
@@ -106,7 +112,7 @@ section {
 .header-logo,
 .header-navigation_destop-links-container,
 .header-navigation_hamburger-menu,
-.two-col-container_wrapper {
+.two-col-_wrapper {
     width: 50%;
     display: block;
 }
@@ -136,13 +142,13 @@ li {
     font-size: .75rem;
 }
 
-@media screen and (min-width:1920px) {
+/* @media screen and (min-width:1920px) {
     .header-wrapper {
         max-width: 1920px;
         width: 100%;
         margin: 0 auto;
     }
-}
+} */
 
 /* Mobile Navigation Styles */
 @media screen and (max-width:768px) {
@@ -160,6 +166,7 @@ li {
 .header-navigation_mobile-links-container {
     width: 100%;
     position: absolute;
+    z-index: 100;
 } 
 
 .mobile-wrapper {
@@ -209,12 +216,6 @@ i.fa.fa-bars {
 }
 
 /* Hero Styles */
-.hero-wrapper {
-    width: 100%;
-    max-width: 1920px;
-    margin: 0 auto;
-}
-
 .hero-wrapper img {
     width: 100%;
     height: auto;
@@ -236,7 +237,7 @@ i.fa.fa-bars {
 }
 
 /* 2 Column Section*/
-.two-col-container_wrapper {
+.two-col-_wrapper {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -301,7 +302,7 @@ i.fa.fa-bars {
 }
 
 @media screen and (min-width: 426px) {
-    .two-col-container_wrapper {
+    .two-col-_wrapper {
         flex-wrap: nowrap;
     }
 
@@ -358,14 +359,6 @@ i.fa.fa-bars {
     }
 }
 
-@media screen and (min-width: 1920px) {
-    .two-col-container_wrapper {
-        width: 100%;
-        max-width: 1920px;
-        margin: 0 auto;
-    }
-}
-
 @media screen and (min-width: 2560px) {
     .two-col .two-col {
         background-color: var(--black);
@@ -391,10 +384,7 @@ i.fa.fa-bars {
 }
 
 .splide-wrapper {
-    width: 100%;
-    max-width: 1920px;
     background-color: var(--white);
-    margin: 0 auto;
 }
 
 .splide {
@@ -487,4 +477,74 @@ h1#carousel-heading {
     }
 }
 
+/* Nike Banner */
+.headline-2_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 25px;
+    background-color: #fff;
+}
 
+.headline-2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.nike-banner_wrapper {
+    background-color: #000000;
+    padding: 3.125rem;
+    display: flex;
+}
+
+.nike-banner_wrapper * {
+    color: #ffffff;
+}
+
+.nike-banner_wrapper h3 {
+    font-size: 3rem;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.nike-banner_wrapper p {
+    padding-left: 1rem;
+    font-size: 1rem;
+    line-height: 24px;
+    margin-top: 32px;
+    font-weight: 400;
+}
+
+.nike-banner_btn-wrapper {
+    margin-top: 32px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border-radius: 30px;
+    border: 1.5px solid transparent;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fff;
+}
+
+.nike-banner_btn {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nike-banner_wrapper .logo_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.nike-banner_wrapper div img {
+    width: 100%;
+}
