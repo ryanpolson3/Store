@@ -489,4 +489,33 @@ h1#carousel-heading {
     }
 }
 
+/* Sign-up Form */
 
+.sign-up_container {
+    width: 100%;
+    
+}
+
+.sign-up_wrapper {
+    width: 100%;
+    max-width: 1920px;
+    background-color: var(--white);
+    margin: 0 auto;
+}
+
+.sign-up_form {
+    width: 100%;
+    max-width: 460px;
+    min-width: 250px;
+    margin: 0 36px;
+}
+
+.sign-up_body {
+    padding-bottom: 60px;
+}
+
+.form_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
