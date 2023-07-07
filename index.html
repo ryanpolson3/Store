@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eCommerce Store</title>
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/styles.css">  
+    <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Hamburger Menu Icon | Mobile -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" > <!-- Glider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-skyblue.min.css" > <!-- Glider Theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"> <!-- Glider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-skyblue.min.css"> <!-- Glider Theme -->
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script> <!-- Glider -->
 </head>
+
 <body>
     <!-- Header -->
-    <section class="header-container">
-        <div class="header-wrapper">
+    <section class="container_header">
+        <div class="wrapper wrapper_header">
             <!-- Desktop Nav -->
             <div class="header-navigation_desktop">
                 <div class="header-logo">
@@ -36,7 +38,7 @@
                     </ul>
                 </nav>
             </div>
-            
+
             <!-- Mobile Nav -->
             <div class="header-navigation_mobile">
                 <div class="header-logo">
@@ -64,14 +66,14 @@
         </nav>
     </section>
     <!-- Hero -->
-    <section class="hero-container">
-        <div class="hero-container_wrapper">
+    <section>
+        <div class="wrapper wrapper_hero">
             <img src="/images/nike-kobe.jpeg" alt="Kobe Bryant">
         </div>
     </section>
     <!-- 2 Column -->
-    <section class="two-col-container">
-        <div class="two-col-container_wrapper">
+    <section>
+        <div class="wrapper wrapper_two-col">
             <div class="two-col col-1">
                 <div class="two-col_img-wrapper">
                     <img src="/images/mamba-forever.webp" alt="Mamba Forever">
@@ -80,22 +82,23 @@
             <div class="two-col col-2">
                 <div class="two-col_text-wrapper">
                     <h1>Kobe Bryant</h1>
-                    <p>An American professional basketball player. He spent his entire 20-year career with the Los Angeles Lakers. Widely regarded as one of the greatest basketball players of all time, Bryant won five NBA championships, was an 18-time All-Star, a 15-time member of the All-NBA Team, a 12-time member of the All-Defensive Team, the 2008 NBA MVP, and a two-time NBA Finals MVP.</p>
+                    <p>An American professional basketball player. He spent his entire 20-year career with the Los Angeles Lakers. Widely regarded as one of the greatest basketball players of all time, Bryant won five NBA championships, was an 18-time All-Star, a 15-time member of the All-NBA Team,
+                        a 12-time member of the All-Defensive Team, the 2008 NBA MVP, and a two-time NBA Finals MVP.</p>
                     <div class="btn-wrapper">
-                        <button type="button" onclick="window.location='https://google.com'"  class="btn btn-learn-more" >Learn More</button>
+                        <button type="button" onclick="window.location='https://google.com'" class="btn btn-learn-more">Learn More</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Product Carousel -->
-    <section class="splide-container">
-        <div class="splide-wrapper">
+    <section>
+        <div class="wrapper wrapper_splide">
             <div class="splide" aria-labelledby="carousel-heading">
 
                 <!-- Carousel Heading -->
                 <h1 id="carousel-heading">Mamba Mentality</h1>
-    
+
                 <!-- Carousel Slider -->
                 <div class="splide__slider">
                     <div class="splide__track">
@@ -187,177 +190,234 @@
                             <div></div>
                         </div>
                     </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Banner -->
-    <section></section>
-    <!-- Footer -->
-    <!-- <footer>
-        <div class="footer-container">
-            <div class="footer-body">
-                <div class="links">
-                    <div>
-                        <div>
-                            <ul>
-                                <li><a href="">Gift Cards</a></li>
-                                <li><a href="">Promotions</a></li>
-                                <li><a href="">Find A Store</a></li>
-                                <li><a href="">Sign Up For Email</a></li>
-                                <li><a href="">Become A Member</a></li>
-                                <li><a href="">Nike Journal</a></li>
-                                <li><a href="">Send Us Feedback</a></li>
-                            </ul>
+                    <!-- Nike Banner -->
+                    <section>
+                        <div class="wrapper wrapper_banner">
+                            <div class="headline-2_wrapper">
+                                <h2 class="headline-2">Nike Membership</h2>
+                            </div>
+                            <div class="nike-banner_wrapper">
+                                <div class="nike-banner_text">
+                                    <h3>Become a Memeber</h3>
+                                    <p>Sign up for free. Join the community.</p>
+                                    <div class="nike-banner_btn-wrapper">
+                                        <button class="btn"><a class="nike-banner_btn" href="#">Join Us</a></button>
+                                        <button class="btn"><a class="nike-banner_btn" href="#">Sign In</a></button>
+                                    </div>
+                                </div>
+                                <div class="logo_wrapper">
+                                    <img src="/images/white-nike-icon.png" alt="Nike Logo">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <div>
-                            <ul>
-                                <li><a href="">Get Help</a></li>
-                                <li><a href="">Order Status</a></li>
-                                <li><a href="">Shipping and Delivery</a></li>
-                                <li><a href="">Returns</a></li>
-                                <li><a href="">Order Cancellations</a></li>
-                                <li><a href="">Payment Options</a></li>
-                                <li><a href="">Gift Card Balances</a></li>
-                                <li><a href="">Contact Us</a></li>
-                            </ul>
+                    </section>
+                    <!-- Nike Sign Up Form -->
+                    <section>
+                        <div class="wrapper wrapper_sign-up">
+                            <form>
+                                <div class='fieldset'>
+                                    <label for='text1'>Text</label>
+                                    <input type='text' id='text1' placeholder='Field Text' />
+                                </div>
+                                <div class='fieldset'>
+                                    <label for='textarea1'>Textarea</label>
+                                    <textarea id='textarea1' placeholder='Field Textarea'></textarea>
+                                </div>
+                                <div class='fieldset'>
+                                    <button type='submit'>Submit Form</button>
+                                </div>
+                            </form>
+                            <div class='message message--success'>Success message</div>
+                            <div class='message message--warning'>Warning message</div>
                         </div>
-                    </div>
-                    <div>
-                        <div>
-                            <ul>
-                                <li><a href="">About Nike</a></li>
-                                <li><a href="">News</a></li>
-                                <li><a href="">Careers</a></li>
-                                <li><a href="">Investors</a></li>
-                                <li><a href="">Purpose</a></li>
-                                <li><a href="">Sustainability</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="social-menu">
-                    <ul class="social-links">
-                        <li>
-                            <a target="_blank" aria-label="Twitter" title="Twitter" data-type="click_navFooter" data-path="social:twitter" href="https://twitter.com/Nike" class="social-link footer-link" data-pre="ILink">
-                                <svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24">
-                                    <path d="M12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm6 9.28v.4c0 1.387-.333 2.72-1 4a8.186 8.186 0 0 1-2.84 3.12c-1.333.853-2.827 1.28-4.48 1.28a8.535 8.535 0 0 1-4.56-1.28h.72c1.387 0 2.613-.427 3.68-1.28-.64 0-1.213-.2-1.72-.6-.507-.4-.867-.92-1.08-1.56l.56.16c.373 0 .64-.053.8-.16a2.67 2.67 0 0 1-1.72-1 2.913 2.913 0 0 1-.68-1.88c.427.267.88.4 1.36.4-.907-.533-1.36-1.36-1.36-2.48 0-.533.133-1.04.4-1.52.8.96 1.72 1.707 2.76 2.24a8.133 8.133 0 0 0 3.4.88c-.107-.16-.16-.4-.16-.72 0-.8.293-1.493.88-2.08s1.28-.88 2.08-.88 1.547.293 2.24.88c.48-.107 1.12-.347 1.92-.72-.213.747-.64 1.28-1.28 1.6H18c.747-.16 1.28-.32 1.6-.48-.533.693-1.067 1.253-1.6 1.68z"></path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" aria-label="Facebook" title="Facebook" data-type="click_navFooter" data-path="social:facebook" href="https://www.facebook.com/nike" class="social-link footer-link" data-pre="ILink">
-                                <svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24">
-                                    <path d="M12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm3.12 12h-2v7.2H10.4V12H8.64V9.52h1.76V8c0-1.12.187-1.92.56-2.4.427-.587 1.2-.88 2.32-.88h2V7.2h-1.2c-.427 0-.693.067-.8.2-.107.133-.16.387-.16.76v1.2h2.16L15.12 12z"></path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" aria-label="Youtube" title="Youtube" data-type="click_navFooter" data-path="social:youtube" href="https://www.youtube.com/user/nike" class="social-link footer-link" data-pre="ILink">
-                                <svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24">
-                                    <path d="M11.28 17.6a.604.604 0 0 1-.2.24.43.43 0 0 1-.24.08c-.08 0-.133-.027-.16-.08a.557.557 0 0 1-.04-.24v-2.96h-.72v3.28a1 1 0 0 0 .12.52c.08.133.2.2.36.2.16 0 .307-.053.44-.16.133-.107.28-.24.44-.4v.48H12v-3.92h-.72v2.96zM6.96 14v-.8H9.6v.8h-.88v4.56h-.88V14h-.88zm4.96-4.72c-.107 0-.2-.04-.28-.12a.384.384 0 0 1-.12-.28v-2.4c0-.053.027-.107.08-.16.053-.053.147-.08.28-.08.133 0 .24.027.32.08a.27.27 0 0 1 .12.24v2.32c0 .107-.04.2-.12.28a.384.384 0 0 1-.28.12zm2 8.32c0-.64.027-1.307.08-2 0-.107-.04-.2-.12-.28-.08-.08-.16-.12-.24-.12h-.12l-.24.16v2.4l.24.16.16.08c.107 0 .173-.027.2-.08.027-.053.04-.16.04-.32zm.08-3.04c.213 0 .387.08.52.24.133.16.2.4.2.72v2.24c0 .267-.053.48-.16.64a.422.422 0 0 1-.44.2 2.1 2.1 0 0 1-.48-.12.506.506 0 0 1-.28-.24v.32h-.8V13.2h.8v1.76c.107-.107.213-.2.32-.28a.532.532 0 0 1 .32-.12zm3.92 5.12c.267-.213.427-.907.48-2.08.053-.587.107-1.147.16-1.68 0-.48-.053-1.013-.16-1.6-.107-1.173-.28-1.893-.52-2.16-.24-.267-1.267-.453-3.08-.56l-2.64-.08-2.72.08c-1.813.107-2.84.293-3.08.56-.24.267-.413.987-.52 2.16a16.07 16.07 0 0 0-.08 1.6c0 .533.027 1.093.08 1.68.107 1.173.28 1.88.52 2.12.24.24 1.267.44 3.08.6l2.72.08 2.64-.08c1.813-.16 2.853-.347 3.12-.56v-.08zM8.4 4h-.96l1.12 3.6v2.24h.96v-2.4L10.64 4h-.96l-.56 2.32h-.08L8.4 4zm2.32 2.56V8.8c0 .373.107.667.32.88.213.213.507.32.88.32s.667-.107.88-.32c.213-.213.32-.507.32-.88V6.56c0-.32-.107-.587-.32-.8-.213-.213-.507-.32-.88-.32s-.667.107-.88.32c-.213.213-.32.48-.32.8zm3.12-.96v3.6a1 1 0 0 0 .12.52c.08.133.213.2.4.2.187 0 .36-.04.52-.12.16-.08.32-.2.48-.36v.48h.88V5.6h-.88v3.2a.523.523 0 0 1-.24.24.645.645 0 0 1-.28.08c-.08 0-.133-.013-.16-.04-.027-.027-.04-.093-.04-.2V5.52h-.8v.08zM12 0c2.187 0 4.2.533 6.04 1.6a11.793 11.793 0 0 1 4.36 4.36C23.467 7.8 24 9.813 24 12s-.533 4.2-1.6 6.04a11.793 11.793 0 0 1-4.36 4.36C16.2 23.467 14.187 24 12 24s-4.2-.533-6.04-1.6a11.793 11.793 0 0 1-4.36-4.36C.533 16.2 0 14.187 0 12s.533-4.2 1.6-6.04A11.793 11.793 0 0 1 5.96 1.6C7.8.533 9.813 0 12 0zm4.56 16.08l-.08-.4c0-.16-.027-.28-.08-.36a.27.27 0 0 0-.24-.12.27.27 0 0 0-.24.12c-.053.08-.08.2-.08.36v.4h.72zm-.32-1.52c.32 0 .573.093.76.28.187.187.28.467.28.84v.96h-1.44v.8c0 .16.027.28.08.36.053.08.147.12.28.12.133 0 .227-.04.28-.12.053-.08.08-.227.08-.44v-.16h.72v.24c0 .373-.093.667-.28.88-.187.213-.453.32-.8.32-.347 0-.613-.107-.8-.32-.187-.213-.28-.507-.28-.88v-1.76c0-.32.107-.587.32-.8.213-.213.48-.32.8-.32z"></path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" aria-label="Instagram " title="Instagram " data-type="click_navFooter" data-path="social:instagram" href="https://instagram.com/nike" class="social-link footer-link" data-pre="ILink">
-                                <svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24">
-                                    <path d="M16 12.48a4.723 4.723 0 0 1-.56 1.48 3.93 3.93 0 0 1-1.04 1.16 3.428 3.428 0 0 1-1.92.68 3.628 3.628 0 0 1-1.96-.48 3.414 3.414 0 0 1-1.4-1.48c-.48-.96-.587-1.973-.32-3.04H7.68l.08 5.52c0 .107.04.213.12.32.08.107.173.16.28.16h8.32c.107 0 .213-.053.32-.16.107-.107.16-.213.16-.32V10.8h-1.12c.16.533.213 1.093.16 1.68zm-3.68 2c.64 0 1.2-.24 1.68-.72s.72-1.053.72-1.72a2.56 2.56 0 0 0-.68-1.76c-.453-.507-1.013-.76-1.68-.76s-1.24.24-1.72.72-.72 1.053-.72 1.72.227 1.253.68 1.76c.453.507 1 .76 1.64.76h.08zm4.16-7.6h-1.12c-.107 0-.213.053-.32.16-.107.107-.16.213-.16.32v1.36c.107.213.267.32.48.32h1.12c.16 0 .28-.053.36-.16a.532.532 0 0 0 .12-.32v-1.2c0-.107-.053-.213-.16-.32-.107-.107-.213-.16-.32-.16zM12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm6.24 16.88l-.08.08v.08a.926.926 0 0 1-.28.68 1.3 1.3 0 0 1-.68.36H7.52a.871.871 0 0 1-.68-.32 1.536 1.536 0 0 1-.36-.72l-.08-.16.08-9.84c0-.267.093-.507.28-.72.187-.213.413-.347.68-.4h9.68a1.3 1.3 0 0 1 .68.36 1.3 1.3 0 0 1 .36.68l.08 9.92z"></path>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="sub-footer">
-                <div>
-                    <div>
-                        <a aria-label="Selected Location: US" title="Selected Location: US" data-pre="ILink" href="//www.nike.com/language_tunnel" class="fs12-nav-sm nav-color-white country-pin">
-                            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="18px" height="15px" fill="none">
-                                <path fill="currentColor" fill-rule="evenodd" d="M4.5 9.001a7.5 7.5 0 1115 0c0 1.205-.385 2.576-.934 3.928-.555 1.364-1.302 2.767-2.08 4.055a39.918 39.918 0 01-2.307 3.405c-.688.905-1.316 1.632-1.711 1.947a.75.75 0 01-.936 0c-.395-.315-1.023-1.042-1.711-1.947a39.916 39.916 0 01-2.306-3.405c-.78-1.288-1.526-2.691-2.08-4.056-.55-1.351-.935-2.722-.935-3.927zM12 12.25a3.25 3.25 0 100-6.5 3.25 3.25 0 000 6.5z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span class="country-pin-label">United States</span>
-                        </a>
-                        <div class="fs12-nav-sm d-sm-b d-md-ib pb6-sm pt5-sm pb0-md ml4-md sub-footer-copyright">
-                            <span id="hf_header_label_copyright">© 2023 Nike, Inc. All Rights Reserved</span>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <ul class="sub-footer-menu">
-                        <li class="ml3-md mr0-md d-sm-b d-md-ib fs12-nav-sm fs10-nav-md">
-                            <div id="SubFooterDropdown-0" class="pre-dropdown-menu sub-footer-menu-dropdown" data-pre="DropdownMenu">
-                                <button role="listbox" aria-expanded="false" aria-controls="SubFooterDropdown-0-Menu" data-var="ctrl" aria-label="Guides" data-type="click_navFooter" data-path="guides" class="nav-btn p0-sm sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm" data-pre="ILink">Guides</button>
-                                <div id="SubFooterDropdown-0-Menu" class="hf-dropdown-menu-box-container" data-var="content">
-                                    <div class="hf-dropdown-menu-box">
-                                        <ul class="ncss-row">
-                                            <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
-                                                <a aria-label="bottom-footer, Guides, Nike Adapt" data-type="click_navFooter" data-path="guides:nike adapt" href="https://www.nike.com/adapt" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike Adapt</a>
-                                            </li>
-                                            <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
-                                                <a aria-label="bottom-footer, Guides, Nike Air" data-type="click_navFooter" data-path="guides:nike air" href="https://www.nike.com/air" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike Air</a>
-                                            </li>
-                                            <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
-                                                <a aria-label="bottom-footer, Guides, Nike Air Force 1" data-type="click_navFooter" data-path="guides:nike air force 1" href="https://www.nike.com/air-force-1" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike Air Force 1</a>
-                                            </li>
-                                            <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
-                                                <a aria-label="bottom-footer, Guides, Nike Air Max" data-type="click_navFooter" data-path="guides:nike air max" href="https://www.nike.com/air-max" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike Air Max</a>
-                                            </li>
-                                            <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
-                                                <a aria-label="bottom-footer, Guides, Nike FlyEase" data-type="click_navFooter" data-path="guides:nike flyease" href="https://www.nike.com/flyease" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike FlyEase</a>
-                                            </li>
-                                            <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
-                                                <a aria-label="bottom-footer, Guides, Nike Flyknit" data-type="click_navFooter" data-path="guides:nike flyknit" href="https://www.nike.com/flyknit" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike Flyknit</a>
-                                            </li>
-                                            <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
-                                                <a aria-label="bottom-footer, Guides, Nike Flyleather" data-type="click_navFooter" data-path="guides:nike flyleather" href="https://www.nike.com/flyleather" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike Flyleather</a>
-                                            </li>
-                                            <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
-                                                <a aria-label="bottom-footer, Guides, Nike Free" data-type="click_navFooter" data-path="guides:nike free" href="https://www.nike.com/free" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike Free</a>
-                                            </li>
-                                            <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
-                                                <a aria-label="bottom-footer, Guides, Nike Joyride" data-type="click_navFooter" data-path="guides:nike joyride" href="https://www.nike.com/joyride" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike Joyride</a>
-                                            </li>
-                                            <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
-                                                <a aria-label="bottom-footer, Guides, Nike React" data-type="click_navFooter" data-path="guides:nike react" href="https://www.nike.com/react" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike React</a>
-                                            </li>
-                                            <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
-                                                <a aria-label="bottom-footer, Guides, Nike Vaporfly" data-type="click_navFooter" data-path="guides:nike vaporfly" href="https://www.nike.com/running/vaporfly" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike Vaporfly</a>
-                                            </li>
-                                            <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
-                                                <a aria-label="bottom-footer, Guides, Nike ZoomX" data-type="click_navFooter" data-path="guides:nike zoomx" href="https://www.nike.com/zoomx" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike ZoomX</a>
-                                            </li>
-                                            <li class="ncss-col-sm-4 va-sm-m lh12-nav-sm">
-                                                <a aria-label="bottom-footer, Guides, Space Hippie" data-type="click_navFooter" data-path="guides:space hippie" href="https://www.nike.com/space-hippie" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Space Hippie</a>
-                                            </li>
+                    </section>
+                    <!-- Footer -->
+                    <footer>
+                        <div class="wrapper wrapper_footer">
+                            <div class="footer_body">
+                                <div class="links">
+                                    <div>
+                                        <ul>
+                                            <li><a href="">Gift Cards</a></li>
+                                            <li><a href="">Promotions</a></li>
+                                            <li><a href="">Find A Store</a></li>
+                                            <li><a href="">Sign Up For Email</a></li>
+                                            <li><a href="">Become A Member</a></li>
+                                            <li><a href="">Nike Journal</a></li>
+                                            <li><a href="">Send Us Feedback</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li><a href="">Get Help</a></li>
+                                            <li><a href="">Order Status</a></li>
+                                            <li><a href="">Shipping and Delivery</a></li>
+                                            <li><a href="">Returns</a></li>
+                                            <li><a href="">Order Cancellations</a></li>
+                                            <li><a href="">Payment Options</a></li>
+                                            <li><a href="">Gift Card Balances</a></li>
+                                            <li><a href="">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li><a href="">About Nike</a></li>
+                                            <li><a href="">News</a></li>
+                                            <li><a href="">Careers</a></li>
+                                            <li><a href="">Investors</a></li>
+                                            <li><a href="">Purpose</a></li>
+                                            <li><a href="">Sustainability</a></li>
                                         </ul>
                                     </div>
                                 </div>
+                                <div class="social-menu">
+                                    <ul class="social-links">
+                                        <li>
+                                            <a target="_blank" aria-label="Twitter" title="Twitter" data-type="click_navFooter" data-path="social:twitter" href="https://twitter.com/Nike" class="social-link footer-link" data-pre="ILink">
+                                                <svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm6 9.28v.4c0 1.387-.333 2.72-1 4a8.186 8.186 0 0 1-2.84 3.12c-1.333.853-2.827 1.28-4.48 1.28a8.535 8.535 0 0 1-4.56-1.28h.72c1.387 0 2.613-.427 3.68-1.28-.64 0-1.213-.2-1.72-.6-.507-.4-.867-.92-1.08-1.56l.56.16c.373 0 .64-.053.8-.16a2.67 2.67 0 0 1-1.72-1 2.913 2.913 0 0 1-.68-1.88c.427.267.88.4 1.36.4-.907-.533-1.36-1.36-1.36-2.48 0-.533.133-1.04.4-1.52.8.96 1.72 1.707 2.76 2.24a8.133 8.133 0 0 0 3.4.88c-.107-.16-.16-.4-.16-.72 0-.8.293-1.493.88-2.08s1.28-.88 2.08-.88 1.547.293 2.24.88c.48-.107 1.12-.347 1.92-.72-.213.747-.64 1.28-1.28 1.6H18c.747-.16 1.28-.32 1.6-.48-.533.693-1.067 1.253-1.6 1.68z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" aria-label="Facebook" title="Facebook" data-type="click_navFooter" data-path="social:facebook" href="https://www.facebook.com/nike" class="social-link footer-link" data-pre="ILink">
+                                                <svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm3.12 12h-2v7.2H10.4V12H8.64V9.52h1.76V8c0-1.12.187-1.92.56-2.4.427-.587 1.2-.88 2.32-.88h2V7.2h-1.2c-.427 0-.693.067-.8.2-.107.133-.16.387-.16.76v1.2h2.16L15.12 12z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" aria-label="Youtube" title="Youtube" data-type="click_navFooter" data-path="social:youtube" href="https://www.youtube.com/user/nike" class="social-link footer-link" data-pre="ILink">
+                                                <svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M11.28 17.6a.604.604 0 0 1-.2.24.43.43 0 0 1-.24.08c-.08 0-.133-.027-.16-.08a.557.557 0 0 1-.04-.24v-2.96h-.72v3.28a1 1 0 0 0 .12.52c.08.133.2.2.36.2.16 0 .307-.053.44-.16.133-.107.28-.24.44-.4v.48H12v-3.92h-.72v2.96zM6.96 14v-.8H9.6v.8h-.88v4.56h-.88V14h-.88zm4.96-4.72c-.107 0-.2-.04-.28-.12a.384.384 0 0 1-.12-.28v-2.4c0-.053.027-.107.08-.16.053-.053.147-.08.28-.08.133 0 .24.027.32.08a.27.27 0 0 1 .12.24v2.32c0 .107-.04.2-.12.28a.384.384 0 0 1-.28.12zm2 8.32c0-.64.027-1.307.08-2 0-.107-.04-.2-.12-.28-.08-.08-.16-.12-.24-.12h-.12l-.24.16v2.4l.24.16.16.08c.107 0 .173-.027.2-.08.027-.053.04-.16.04-.32zm.08-3.04c.213 0 .387.08.52.24.133.16.2.4.2.72v2.24c0 .267-.053.48-.16.64a.422.422 0 0 1-.44.2 2.1 2.1 0 0 1-.48-.12.506.506 0 0 1-.28-.24v.32h-.8V13.2h.8v1.76c.107-.107.213-.2.32-.28a.532.532 0 0 1 .32-.12zm3.92 5.12c.267-.213.427-.907.48-2.08.053-.587.107-1.147.16-1.68 0-.48-.053-1.013-.16-1.6-.107-1.173-.28-1.893-.52-2.16-.24-.267-1.267-.453-3.08-.56l-2.64-.08-2.72.08c-1.813.107-2.84.293-3.08.56-.24.267-.413.987-.52 2.16a16.07 16.07 0 0 0-.08 1.6c0 .533.027 1.093.08 1.68.107 1.173.28 1.88.52 2.12.24.24 1.267.44 3.08.6l2.72.08 2.64-.08c1.813-.16 2.853-.347 3.12-.56v-.08zM8.4 4h-.96l1.12 3.6v2.24h.96v-2.4L10.64 4h-.96l-.56 2.32h-.08L8.4 4zm2.32 2.56V8.8c0 .373.107.667.32.88.213.213.507.32.88.32s.667-.107.88-.32c.213-.213.32-.507.32-.88V6.56c0-.32-.107-.587-.32-.8-.213-.213-.507-.32-.88-.32s-.667.107-.88.32c-.213.213-.32.48-.32.8zm3.12-.96v3.6a1 1 0 0 0 .12.52c.08.133.213.2.4.2.187 0 .36-.04.52-.12.16-.08.32-.2.48-.36v.48h.88V5.6h-.88v3.2a.523.523 0 0 1-.24.24.645.645 0 0 1-.28.08c-.08 0-.133-.013-.16-.04-.027-.027-.04-.093-.04-.2V5.52h-.8v.08zM12 0c2.187 0 4.2.533 6.04 1.6a11.793 11.793 0 0 1 4.36 4.36C23.467 7.8 24 9.813 24 12s-.533 4.2-1.6 6.04a11.793 11.793 0 0 1-4.36 4.36C16.2 23.467 14.187 24 12 24s-4.2-.533-6.04-1.6a11.793 11.793 0 0 1-4.36-4.36C.533 16.2 0 14.187 0 12s.533-4.2 1.6-6.04A11.793 11.793 0 0 1 5.96 1.6C7.8.533 9.813 0 12 0zm4.56 16.08l-.08-.4c0-.16-.027-.28-.08-.36a.27.27 0 0 0-.24-.12.27.27 0 0 0-.24.12c-.053.08-.08.2-.08.36v.4h.72zm-.32-1.52c.32 0 .573.093.76.28.187.187.28.467.28.84v.96h-1.44v.8c0 .16.027.28.08.36.053.08.147.12.28.12.133 0 .227-.04.28-.12.053-.08.08-.227.08-.44v-.16h.72v.24c0 .373-.093.667-.28.88-.187.213-.453.32-.8.32-.347 0-.613-.107-.8-.32-.187-.213-.28-.507-.28-.88v-1.76c0-.32.107-.587.32-.8.213-.213.48-.32.8-.32z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" aria-label="Instagram " title="Instagram " data-type="click_navFooter" data-path="social:instagram" href="https://instagram.com/nike" class="social-link footer-link" data-pre="ILink">
+                                                <svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M16 12.48a4.723 4.723 0 0 1-.56 1.48 3.93 3.93 0 0 1-1.04 1.16 3.428 3.428 0 0 1-1.92.68 3.628 3.628 0 0 1-1.96-.48 3.414 3.414 0 0 1-1.4-1.48c-.48-.96-.587-1.973-.32-3.04H7.68l.08 5.52c0 .107.04.213.12.32.08.107.173.16.28.16h8.32c.107 0 .213-.053.32-.16.107-.107.16-.213.16-.32V10.8h-1.12c.16.533.213 1.093.16 1.68zm-3.68 2c.64 0 1.2-.24 1.68-.72s.72-1.053.72-1.72a2.56 2.56 0 0 0-.68-1.76c-.453-.507-1.013-.76-1.68-.76s-1.24.24-1.72.72-.72 1.053-.72 1.72.227 1.253.68 1.76c.453.507 1 .76 1.64.76h.08zm4.16-7.6h-1.12c-.107 0-.213.053-.32.16-.107.107-.16.213-.16.32v1.36c.107.213.267.32.48.32h1.12c.16 0 .28-.053.36-.16a.532.532 0 0 0 .12-.32v-1.2c0-.107-.053-.213-.16-.32-.107-.107-.213-.16-.32-.16zM12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm6.24 16.88l-.08.08v.08a.926.926 0 0 1-.28.68 1.3 1.3 0 0 1-.68.36H7.52a.871.871 0 0 1-.68-.32 1.536 1.536 0 0 1-.36-.72l-.08-.16.08-9.84c0-.267.093-.507.28-.72.187-.213.413-.347.68-.4h9.68a1.3 1.3 0 0 1 .68.36 1.3 1.3 0 0 1 .36.68l.08 9.92z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </li>
-                        <li class="ml3-md mr0-md d-sm-b d-md-ib fs12-nav-sm fs10-nav-md">
-                            <a target="_blank" aria-label="Terms of Sale" data-type="click_navFooter" data-path="terms of sale" href="https://agreementservice.svs.nike.com/us/en_us/rest/agreement?agreementType=termsOfSale&amp;uxId=com.nike.commerce.nikedotcom.web&amp;country=US&amp;language=en&amp;requestType=redirect" class="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm" data-pre="ILink">Terms of Sale</a>
-                        </li>
-                        <li class="ml3-md mr0-md d-sm-b d-md-ib fs12-nav-sm fs10-nav-md">
-                            <a target="_blank" aria-label="Terms of Use" data-type="click_navFooter" data-path="terms of use" href="https://agreementservice.svs.nike.com/us/en_us/rest/agreement?agreementType=termsOfUse&amp;uxId=com.nike.commerce.nikedotcom.web&amp;country=US&amp;language=en&amp;requestType=redirect" class="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm" data-pre="ILink">Terms of Use</a>
-                        </li>
-                        <li class="ml3-md mr0-md d-sm-b d-md-ib fs12-nav-sm fs10-nav-md">
-                            <a target="_blank" aria-label="Nike Privacy Policy" data-type="click_navFooter" data-path="nike privacy policy" href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacyPolicy&amp;uxId=com.nike.commerce.nikedotcom.web&amp;country=US&amp;language=en&amp;requestType=redirect" class="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm" data-pre="ILink">Nike Privacy Policy</a>
-                        </li>
-                        <li class="ml3-md mr0-md d-sm-b d-md-ib fs12-nav-sm fs10-nav-md">
-                            <a target="_self" aria-label="Your Privacy Choices" data-type="click_navFooter" data-path="your privacy choices" href="https://www.nike.com/guest/settings/do-not-share-my-data" class="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm" data-pre="ILink">Your Privacy Choices</a>
-                        </li>
-                        <li class="ml3-md mr0-md d-sm-b d-md-ib fs12-nav-sm fs10-nav-md">
-                            <a target="_self" aria-label="CA Supply Chains Act" data-type="click_navFooter" data-path="ca supply chains act" href="https://purpose.nike.com/nike-statement-on-forced-labor" class="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm" data-pre="ILink">CA Supply Chains Act</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer> -->
-    <!-- Scripts -->
-    <script src="/script.js"></script>
+                            <div class="sub-footer">
+                                <div>
+                                    <div>
+                                        <a aria-label="Selected Location: US" title="Selected Location: US" data-pre="ILink" href="//www.nike.com/language_tunnel" class="fs12-nav-sm nav-color-white country-pin">
+                                            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="18px" height="15px" fill="none">
+                                                <path fill="currentColor" fill-rule="evenodd"
+                                                    d="M4.5 9.001a7.5 7.5 0 1115 0c0 1.205-.385 2.576-.934 3.928-.555 1.364-1.302 2.767-2.08 4.055a39.918 39.918 0 01-2.307 3.405c-.688.905-1.316 1.632-1.711 1.947a.75.75 0 01-.936 0c-.395-.315-1.023-1.042-1.711-1.947a39.916 39.916 0 01-2.306-3.405c-.78-1.288-1.526-2.691-2.08-4.056-.55-1.351-.935-2.722-.935-3.927zM12 12.25a3.25 3.25 0 100-6.5 3.25 3.25 0 000 6.5z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                            <span class="country-pin-label">United States</span>
+                                        </a>
+                                        <div>
+                                            <span id="hf_header_label_copyright">© 2023 Nike, Inc. All Rights Reserved</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <ul class="sub-footer-menu">
+                                        <li>
+                                            <div id="SubFooterDropdown-0" class="pre-dropdown-menu sub-footer-menu-dropdown" data-pre="DropdownMenu">
+                                                <button role="listbox" aria-expanded="false" aria-controls="SubFooterDropdown-0-Menu" data-var="ctrl" aria-label="Guides" data-type="click_navFooter" data-path="guides"
+                                                    class="nav-btn p0-sm sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm" data-pre="ILink">Guides</button>
+                                                <div>
+                                                    <div>
+                                                        <ul>
+                                                            <li>
+                                                                <a aria-label="bottom-footer, Guides, Nike Adapt" data-type="click_navFooter" data-path="guides:nike adapt" href="https://www.nike.com/adapt" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike Adapt</a>
+                                                            </li>
+                                                            <li>
+                                                                <a aria-label="bottom-footer, Guides, Nike Air" data-type="click_navFooter" data-path="guides:nike air" href="https://www.nike.com/air" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike Air</a>
+                                                            </li>
+                                                            <li>
+                                                                <a aria-label="bottom-footer, Guides, Nike Air Force 1" data-type="click_navFooter" data-path="guides:nike air force 1" href="https://www.nike.com/air-force-1" class="sub-footer-submenu-link footer-link fs12-nav-sm"
+                                                                    data-pre="ILink">Nike Air Force 1</a>
+                                                            </li>
+                                                            <li>
+                                                                <a aria-label="bottom-footer, Guides, Nike Air Max" data-type="click_navFooter" data-path="guides:nike air max" href="https://www.nike.com/air-max" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike Air
+                                                                    Max</a>
+                                                            </li>
+                                                            <li>
+                                                                <a aria-label="bottom-footer, Guides, Nike FlyEase" data-type="click_navFooter" data-path="guides:nike flyease" href="https://www.nike.com/flyease" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike
+                                                                    FlyEase</a>
+                                                            </li>
+                                                            <li>
+                                                                <a aria-label="bottom-footer, Guides, Nike Flyknit" data-type="click_navFooter" data-path="guides:nike flyknit" href="https://www.nike.com/flyknit" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike
+                                                                    Flyknit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a aria-label="bottom-footer, Guides, Nike Flyleather" data-type="click_navFooter" data-path="guides:nike flyleather" href="https://www.nike.com/flyleather" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike
+                                                                    Flyleather</a>
+                                                            </li>
+                                                            <li>
+                                                                <a aria-label="bottom-footer, Guides, Nike Free" data-type="click_navFooter" data-path="guides:nike free" href="https://www.nike.com/free" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike Free</a>
+                                                            </li>
+                                                            <li>
+                                                                <a aria-label="bottom-footer, Guides, Nike Joyride" data-type="click_navFooter" data-path="guides:nike joyride" href="https://www.nike.com/joyride" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike
+                                                                    Joyride</a>
+                                                            </li>
+                                                            <li>
+                                                                <a aria-label="bottom-footer, Guides, Nike React" data-type="click_navFooter" data-path="guides:nike react" href="https://www.nike.com/react" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike React</a>
+                                                            </li>
+                                                            <li>
+                                                                <a aria-label="bottom-footer, Guides, Nike Vaporfly" data-type="click_navFooter" data-path="guides:nike vaporfly" href="https://www.nike.com/running/vaporfly" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike
+                                                                    Vaporfly</a>
+                                                            </li>
+                                                            <li>
+                                                                <a aria-label="bottom-footer, Guides, Nike ZoomX" data-type="click_navFooter" data-path="guides:nike zoomx" href="https://www.nike.com/zoomx" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Nike ZoomX</a>
+                                                            </li>
+                                                            <li>
+                                                                <a aria-label="bottom-footer, Guides, Space Hippie" data-type="click_navFooter" data-path="guides:space hippie" href="https://www.nike.com/space-hippie" class="sub-footer-submenu-link footer-link fs12-nav-sm" data-pre="ILink">Space
+                                                                    Hippie</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" aria-label="Terms of Sale" data-type="click_navFooter" data-path="terms of sale"
+                                                href="https://agreementservice.svs.nike.com/us/en_us/rest/agreement?agreementType=termsOfSale&amp;uxId=com.nike.commerce.nikedotcom.web&amp;country=US&amp;language=en&amp;requestType=redirect"
+                                                class="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm" data-pre="ILink">Terms of Sale</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" aria-label="Terms of Use" data-type="click_navFooter" data-path="terms of use"
+                                                href="https://agreementservice.svs.nike.com/us/en_us/rest/agreement?agreementType=termsOfUse&amp;uxId=com.nike.commerce.nikedotcom.web&amp;country=US&amp;language=en&amp;requestType=redirect"
+                                                class="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm" data-pre="ILink">Terms of Use</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" aria-label="Nike Privacy Policy" data-type="click_navFooter" data-path="nike privacy policy"
+                                                href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacyPolicy&amp;uxId=com.nike.commerce.nikedotcom.web&amp;country=US&amp;language=en&amp;requestType=redirect"
+                                                class="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm" data-pre="ILink">Nike Privacy Policy</a>
+                                        </li>
+                                        <li>
+                                            <a target="_self" aria-label="Your Privacy Choices" data-type="click_navFooter" data-path="your privacy choices" href="https://www.nike.com/guest/settings/do-not-share-my-data"
+                                                class="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm" data-pre="ILink">Your Privacy Choices</a>
+                                        </li>
+                                        <li>
+                                            <a target="_self" aria-label="CA Supply Chains Act" data-type="click_navFooter" data-path="ca supply chains act" href="https://purpose.nike.com/nike-statement-on-forced-labor"
+                                                class="sub-footer-menu-link nav-sm-b footer-link pt2-sm pb2-sm prl2-md d-sm-b fs12-nav-sm" data-pre="ILink">CA Supply Chains Act</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- Scripts -->
+                    <script src="/script.js"></script>
 </body>
+
 </html>
